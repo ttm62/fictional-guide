@@ -1,0 +1,1 @@
+SSE Aggregator API là một lớp trung gian chịu trách nhiệm kết nối đến nhiều dịch vụ SSE khác nhau, duy trì các kết nối streaming, và hợp nhất dữ liệu sự kiện theo thời gian thực. Nó đóng vai trò như một gateway giúp client chỉ cần kết nối đến một endpoint duy nhất, thay vì phải quản lý nhiều luồng SSE riêng biệt.
