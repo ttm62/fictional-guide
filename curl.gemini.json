@@ -1,0 +1,230 @@
+curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:streamGenerateContent?alt=sse&key=?" \
+  -H 'Content-Type: application/json' \
+  --no-buffer \
+  -d '{
+    "contents": [
+        {
+            "parts": [
+                {
+                    "text": "a poem"
+                }
+            ]
+        }
+    ]
+}'
+
+data: {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "Okay"
+                    }
+                ],
+                "role": "model"
+            }
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 2,
+        "totalTokenCount": 2,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-2.0-flash"
+}
+
+data: {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": ", here's a poem for you. I'll try to make it a little evocative"
+                    }
+                ],
+                "role": "model"
+            }
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 2,
+        "totalTokenCount": 2,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-2.0-flash"
+}
+
+data: {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": " and thought-provoking.\n**Ephemeral Echoes**\n\nThe sand remembers the tide's"
+                    }
+                ],
+                "role": "model"
+            }
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 2,
+        "totalTokenCount": 2,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-2.0-flash"
+}
+
+data: {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": " embrace,\nA fleeting kiss upon its face.\nEach grain a whisper, soft and low,\nOf where the ocean currents flow.\n\nA shattered shell"
+                    }
+                ],
+                "role": "model"
+            }
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 2,
+        "totalTokenCount": 2,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-2.0-flash"
+}
+
+data: {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": ", a pearly gleam,\nA silent witness to a dream.\nOf ancient creatures, deep and vast,\nWhose vibrant echoes forever last.\n\nThe"
+                    }
+                ],
+                "role": "model"
+            }
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 2,
+        "totalTokenCount": 2,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-2.0-flash"
+}
+
+data: {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": " wind it sighs through reeds so tall,\nA mournful answer to the call\nOf seagulls circling, wild and free,\nAbove the restless, boundless sea.\n\nAnd I, I stand upon the shore,\nWhere moments fade and are"
+                    }
+                ],
+                "role": "model"
+            }
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 2,
+        "totalTokenCount": 2,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-2.0-flash"
+}
+
+data: {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": " no more.\nBut in the echoes, I can hear,\nThe whisper of a passing year.\n\nWhat do you think?  I'd be happy to try a different kind of poem if you have a particular style or subject"
+                    }
+                ],
+                "role": "model"
+            }
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 2,
+        "totalTokenCount": 2,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ]
+    },
+    "modelVersion": "gemini-2.0-flash"
+}
+
+data: {
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": " in mind.\n"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP"
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 2,
+        "candidatesTokenCount": 203,
+        "totalTokenCount": 205,
+        "promptTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 2
+            }
+        ],
+        "candidatesTokensDetails": [
+            {
+                "modality": "TEXT",
+                "tokenCount": 203
+            }
+        ]
+    },
+    "modelVersion": "gemini-2.0-flash"
+}

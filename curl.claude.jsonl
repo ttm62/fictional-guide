@@ -1,0 +1,184 @@
+curl https: //api.anthropic.com/v1/messages \
+     --header "anthropic-version: 2023-06-01" \
+     --header "content-type: application/json" \
+     --header "x-api-key: ?" \
+     --data \
+'{
+  "model": "claude-3-7-sonnet-20250219",
+  "messages": [
+    {
+      "role": "user",
+      "content": "some golang code"
+    }
+  ],
+  "max_tokens": 256,
+  "stream": true
+}'
+
+event: message_start
+data: {
+  "type": "message_start",
+  "message": {
+    "id": "msg_01Rn2eNgRKnGw1Sy4HhUj14C",
+    "type": "message",
+    "role": "assistant",
+    "model": "claude-3-7-sonnet-20250219",
+    "content": [],
+    "stop_reason": null,
+    "stop_sequence": null,
+    "usage": {
+      "input_tokens": 10,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 5
+    }
+  }
+}
+
+event: content_block_start
+data: {
+  "type": "content_block_start",
+  "index": 0,
+  "content_block": {
+    "type": "text",
+    "text": ""
+  }
+}
+
+event: ping
+data: {
+  "type": "ping"
+}
+
+event: content_block_delta
+data: {
+  "type": "content_block_delta",
+  "index": 0,
+  "delta": {
+    "type": "text_delta",
+    "text": "I'd be happy to"
+  }
+}
+
+event: content_block_delta
+data: {
+  "type": "content_block_delta",
+  "index": 0,
+  "delta": {
+    "type": "text_delta",
+    "text": " help you with Go (Golang) code."
+  }
+}
+
+event: content_block_delta
+data: {
+  "type": "content_block_delta",
+  "index": 0,
+  "delta": {
+    "type": "text_delta",
+    "text": " Could you please specify what kind of code you're looking"
+  }
+}
+
+event: content_block_delta
+data: {
+  "type": "content_block_delta",
+  "index": 0,
+  "delta": {
+    "type": "text_delta",
+    "text": " for? For example:\n\n1. Are you looking for a specific"
+  }
+}
+
+event: content_block_delta
+data: {
+  "type": "content_block_delta",
+  "index": 0,
+  "delta": {
+    "type": "text_delta",
+    "text": " functionality or example?\n2. Do you need help solving"
+  }
+}
+
+event: content_block_delta
+data: {
+  "type": "content_block_delta",
+  "index": 0,
+  "delta": {
+    "type": "text_delta",
+    "text": " a particular problem?\n3. Would you like to see a"
+  }
+}
+
+event: content_block_delta
+data: {
+  "type": "content_block_delta",
+  "index": 0,
+  "delta": {
+    "type": "text_delta",
+    "text": " basic \"Hello World\" or some specific data structure implementation?"
+  }
+}
+
+event: content_block_delta
+data: {
+  "type": "content_block_delta",
+  "index": 0,
+  "delta": {
+    "type": "text_delta",
+    "text": "\n4. Are you looking for examples of conc"
+  }
+}
+
+event: content_block_delta
+data: {
+  "type": "content_block_delta",
+  "index": 0,
+  "delta": {
+    "type": "text_delta",
+    "text": "urrency, web servers, or other Go features?\n\nIf"
+  }
+}
+
+event: content_block_delta
+data: {
+  "type": "content_block_delta",
+  "index": 0,
+  "delta": {
+    "type": "text_delta",
+    "text": " you provide more details about what you're trying to achieve, I can write"
+  }
+}
+
+event: content_block_delta
+data: {
+  "type": "content_block_delta",
+  "index": 0,
+  "delta": {
+    "type": "text_delta",
+    "text": " some appropriate Go code for you."
+  }
+}
+
+event: content_block_stop
+data: {
+  "type": "content_block_stop",
+  "index": 0
+}
+
+event: message_delta
+data: {
+  "type": "message_delta",
+  "delta": {
+    "stop_reason": "end_turn",
+    "stop_sequence": null
+  },
+  "usage": {
+    "output_tokens": 124
+  }
+}
+
+event: message_stop
+data: {
+  "type": "message_stop"
+}
